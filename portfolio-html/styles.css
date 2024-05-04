@@ -1,15 +1,42 @@
 body {
-    background-color:rgb(203,209,164);
+    background-image: url('images/background-glitch.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.titulo-h1 {
-    color: rgb(6,6,68);
+.inicio, .perfil, .trabalhos, .depoimentos, .contato {
+    background-color: rgba(247, 248, 236, 0.678);
+    width: 80%;
+    margin: auto;
+    overflow: hidden; 
+    padding: 6%;
 }
 
-.titulo-h3 {
+#marianome-img {
+    width: 50%;
+    float: left;
+}
+
+#maria-img {
+    width: 30%;
+    float: left; 
+}
+
+#h2-inicio {
     color:rgb(36,57,110);
+    font-size: 30px;
+    float: left;
+    padding-left: 23%;
 }
 
-.fundo-inicio {
-    color: rgb(247,248,236);
+#paragrafo-inicio {
+    color:rgba(0, 0, 0, 0.877);
+    font-size: 20px;
+    width: 80%;
+    padding-left: 3%;
+}
+
+.icone-redes {
+    float:inline-end;
 }
