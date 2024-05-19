@@ -1,49 +1,131 @@
-/*styles do body, titulos e seção inicial*/
+/*Personalização geral e body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url('images/background-glitch.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-.inicio, .perfil, .trabalhos, .depoimentos, .contato {
+.inicio, .perfil, .trabalhos, .depoimentos {
     background-color: rgba(247, 248, 236, 0.678);
-    width: 80%;
+}
+.inicio, .perfil, .trabalhos, .depoimentos, .contato {
+    padding: 3%;
+    width: 90%;
     margin: auto;
-    overflow: hidden; 
-    padding: 6%;
+
+/*Edição de títulos e textp de forma geral*/
+}
+.titulo-h3 {
+    color:rgb(22, 43, 66);
+    margin-bottom: 1%;
+}
+.titulo-h4 {
+    color:rgb(43, 94, 13);
+}
+/*Header levando aos itens da pagina*/
+.cabecalho{
+    background-color: rgb(36, 57, 110);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+#cabeçalho-nav {
+    flex-direction: row;
+}
+#cabecalho-nav > a {
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-#marianome-img {
-    width: 50%;
-    float: left;
+/*Estilização do ínicio, contendo foto e apresentação da developer*/
+.inicio {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
-
 #maria-img {
     width: 30%;
-    float: left; 
+    position: absolute;
+    left: 12%;
+    padding-top: 11%;
 }
-
-#h2-inicio {
+#inicio-texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#inicio-texto > img {
+    width: 90%;
+    padding-left: 10%;
+}
+#inicio-texto > h2 {
     color:rgb(36,57,110);
-    font-size: 30px;
-    float: left;
-    padding-left: 23%;
-}
-
-#paragrafo-inicio {
-    color:rgba(0, 0, 0, 0.877);
     font-size: 20px;
-    width: 80%;
-    padding-left: 3%;
 }
-
+#inicio-desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#inicio-texto > h2, #inicio-desc {
+    padding-left: 42%;
+    width: 90%;
+}
+/*Personalização dos ícones no iníciio*/
+.icones-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    padding-right: 10%;
+}
 .icone-redes {
-    float:inline-end;
-    width: 3%;
+    width: 50%;
+    height: auto;
+    margin-left: 1%;
 }
 
-/**/
-.h3-titulo  {
-    color:rgba(66, 103, 146, 0.877);
+/*Seção perfil ou currículo*/
+.perfil {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+ul {
+    margin-bottom: 20px; /* Adiciona 20 pixels de espaço abaixo de cada lista */
+}
+li {
+    list-style: none;
+}
+
+/*Seção portfólio, com imagens e links de trabalhos*/
+
+
+/*Depoimentos de ex-clientes, por exemplo*/
+.depoimentos {
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/*Contato, com formulário*/
+.contato {
+    background-color: rgb(79, 87, 192);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Rodapé do site*
+/
