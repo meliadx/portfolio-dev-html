@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Definindo a fonte geral */
 }
 body {
     background-image: url('images/background-glitch.gif');
@@ -10,23 +11,29 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-.inicio, .perfil, .trabalhos, .depoimentos {
+.inicio, .perfil, .portfolio, .depoimentos {
     background-color: rgba(247, 248, 236, 0.678);
 }
-.inicio, .perfil, .trabalhos, .depoimentos, .contato {
+.inicio, .perfil, .portfolio, .depoimentos, .contato {
     padding: 3%;
     width: 90%;
     margin: auto;
+}
 
 /*Edição de títulos e textp de forma geral*/
+.titulo-h2 {
+    color:rgb(16, 39, 63);
+    padding-bottom: 4%;
 }
 .titulo-h3 {
-    color:rgb(22, 43, 66);
+    color:rgba(22, 43, 66, 0.712);
     margin-bottom: 1%;
+    font-size: 18px;
 }
 .titulo-h4 {
     color:rgb(43, 94, 13);
 }
+
 /*Header levando aos itens da pagina*/
 .cabecalho{
     background-color: rgb(36, 57, 110);
@@ -39,15 +46,18 @@ body {
     flex-direction: row;
 }
 #cabecalho-nav > a {
-    color:white;
-    font-size: 20px;
+    color: white;
+    font-size: 16px;
     text-decoration: none;
+    letter-spacing: 2px;
+    margin: 0 15px;
 }
 
 /*Estilização do ínicio, contendo foto e apresentação da developer*/
 .inicio {
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
+    padding-bottom: 10%;
 }
 #maria-img {
     width: 30%;
@@ -76,6 +86,7 @@ body {
     padding-left: 42%;
     width: 90%;
 }
+
 /*Personalização dos ícones no iníciio*/
 .icones-container {
     display: flex;
@@ -91,20 +102,48 @@ body {
 
 /*Seção perfil ou currículo*/
 .perfil {
-    padding-left: 5%;
+    padding-left: 2%;
+    text-align: center;
+}
+.perfil-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+}
+.coluna {
+    width: 50%;
 }
 ul {
-    margin-bottom: 20px; /* Adiciona 20 pixels de espaço abaixo de cada lista */
+    margin-bottom: 20px;
 }
 li {
     list-style: none;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.842);
 }
 
-/*Seção portfólio, com imagens e links de trabalhos*/
 
+/*Seção portfólio, com imagens e links de trabalhos*/
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-portfolio {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.item-portfolio img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.titulo-portfolio {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.descricao-portfolio {
+    font-size: 14px;
+}
 
 /*Depoimentos de ex-clientes, por exemplo*/
 .depoimentos {
@@ -112,20 +151,63 @@ li {
     border-bottom-right-radius: 3%;
 }
 
-/*Contato, com formulário*/
+/*Seção de Contato*/
 .contato {
-    background-color: rgb(79, 87, 192);
+    background-color: rgba(87, 95, 201, 0.253);
     margin-top: 2%;
     margin-bottom: 2%;
-    padding: 5%;
+    padding: 3%;
     border-radius: 5%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; 
 }
-
 .contato-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end
+}
+.contato-form label {
+    margin-bottom: 5px;
+}
+.contato-form input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+}
+.contato-form button {
+    background-color: #629e4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contato-form button:hover {
+    background-color: #45a049;
+}
+.contato-form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    resize: vertical;
 }
 
-/*Rodapé do site*
-/
+/*Rodapé do site*/
+.rodape {
+    background-color: rgba(36, 57, 110, 0.747);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+#rodape-nav {
+    margin-bottom: 10px;
+}
+#direitos-autorais {
+    font-size: 14px;
+    margin-top: 10px;
+}
