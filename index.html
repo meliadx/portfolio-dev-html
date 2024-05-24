@@ -10,147 +10,149 @@
 <body>
 
     <!--Seção Cabeçalho e Navegação-->
-    <header class="cabecalho">
+    <header id="cabecalho">
         <nav id="cabecalho-nav">
-            <a href=".inicio">Início</a>
-            <a href=".perfil">Perfil</a>
-            <a href=".depoimentos">Depoimentos</a>
-            <a href=".contato">Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#perfil">Perfil</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <!--Seção inicial de apresentação-->
-    <section class="inicio">
-        <img id="maria-img" src="assets/images\mariadasilvadesign.png" alt="Foto de Maria da Silva">
-        <section id="inicio-texto">  
-            <img src="assets/images\mariadasilvanome.png" alt="Nome de Maria da Silva">
-            <h2>Desenvolvedora de software</h2>
-            <p id="inicio-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu vulputate urna. 
-            Praesent in nunc tellus. Curabitur iaculis, nisl sed posuere consectetur, orci justo augue,
-            nec congue urna eros id ante. Donec aliquet pellentesque dolor ultricies sagittis.
-            Mauris placerat molestie urna, ac sodales est ornare in. Quisque sit amet suscipit magna,
-            sed feugiat urna. Aliquam tristique nibh vel diam vestibulum, at condimentum est semper.</p>
-            <nav class="icones-container">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img class="icone-redes" src="assets/images/icone-linkedin.png" alt="Ícone do Linkedin">
-                </a>
-                <a href="https://www.instagram.com/chuuo3o/" target="_blank">
-                    <img class="icone-redes" src="assets/images/icone-instagram.png" alt="Ícone do Instagram">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="icone-redes" src="assets/images/icone-facebook.png" alt="Ícone do Facebook">
-                </a>
-            </nav>
-        </section>  
-    </section>
-
-    <!--Seção Perfil/currículo-->
-    <section class="perfil">
-        <h2 class="titulo-h2">Perfil</h2>
-        <section class="perfil-container">
-            <section class="coluna">
-                <h3 class="titulo-h3">Educação</h3>
-                <ul>
-                    <li>CST em Análise e Desenvolvimento de Sistemas, Universidade XYZ, 2020 - 2022</li>
-                </ul>
-                
-                <h3 class="titulo-h3">Experiência Profissional</h3>
-                <ul>
-                    <li>Estagiária em Desenvolvimento de Software, CIA Suzano, junho de 2022 - dezembro de 2022</li>
-                    <li>Desenvolvimento e manutenção de sistemas internos</li>
-                    <li>Colaboração em projetos de equipe para implementação de novas funcionalidades</li>
-                    <li>Testes de software e resolução de problemas</li>
-                </ul>
-                
-                <h3 class="titulo-h3">Cursos e Certificações</h3>
-                <ul>
-                    <li>Curso de Desenvolvimento Web Avançado, Udemy, 2021</li>
-                    <li>Certificado em Desenvolvimento Ágil de Software, Coursera, 2022</li>
-                </ul>
-            </section>
-            <section class="coluna">
-                <h3 class="titulo-h3">Hard Skills</h3>
-                <ul>
-                    <li>Linguagens de Programação: JavaScript, Python, Java</li>
-                    <li>Frameworks e Bibliotecas: React.js, Node.js, Django</li>
-                    <li>Banco de Dados: MySQL, MongoDB</li>
-                    <li>Ferramentas de Controle de Versão: Git, GitHub</li>
-                    <li>Metodologias Ágeis: Scrum, Kanban</li>
-                </ul>
-                
-                <h3 class="titulo-h3">Soft Skills</h3>
-                <ul>
-                    <li>Comunicação Efetiva</li>
-                    <li>Trabalho em Equipe</li>
-                    <li>Resolução de Problemas</li>
-                    <li>Capacidade de Aprendizado Rápido</li>
-                    <li>Adaptabilidade</li>
-                </ul>
+    <main>
+        <!--Seção inicial de apresentação-->
+        <section id="inicio">
+            <img id="maria-img" src="assets/images\mariadasilvadesign.png" alt="Foto de Maria da Silva">
+            <section id="inicio-texto">  
+                <img src="assets/images\mariadasilvanome.png" alt="Nome de Maria da Silva">
+                <h2>Desenvolvedora de software</h2>
+                <p id="inicio-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu vulputate urna. 
+                Praesent in nunc tellus. Curabitur iaculis, nisl sed posuere consectetur, orci justo augue,
+                nec congue urna eros id ante. Donec aliquet pellentesque dolor ultricies sagittis.
+                Mauris placerat molestie urna, ac sodales est ornare in. Quisque sit amet suscipit magna,
+                sed feugiat urna. Aliquam tristique nibh vel diam vestibulum, at condimentum est semper.</p>
+                <nav class="icones-container">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img class="icone-redes" src="assets/images/icone-linkedin.png" alt="Ícone do Linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/chuuo3o/" target="_blank">
+                        <img class="icone-redes" src="assets/images/icone-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="icone-redes" src="assets/images/icone-facebook.png" alt="Ícone do Facebook">
+                    </a>
+                </nav>
             </section>
         </section>
-    </section>
+        <hr>
+
+        <!--Seção Perfil/currículo-->
+        <section id="perfil">
+            <h2 class="titulo-h2">Perfil</h2>
+            <section class="perfil-container">
+                <section class="coluna">
+                    <h3 class="titulo-h3">Educação</h3>
+                    <ul>
+                        <li>CST em Análise e Desenvolvimento de Sistemas, Universidade XYZ, 2020 - 2022</li>
+                    </ul>
+                    
+                    <h3 class="titulo-h3">Experiência Profissional</h3>
+                    <ul>
+                        <li>Estagiária em Desenvolvimento de Software, CIA Suzano, junho de 2022 - dezembro de 2022</li>
+                        <li>Desenvolvimento e manutenção de sistemas internos</li>
+                        <li>Colaboração em projetos de equipe para implementação de novas funcionalidades</li>
+                        <li>Testes de software e resolução de problemas</li>
+                    </ul>
+                    
+                    <h3 class="titulo-h3">Cursos e Certificações</h3>
+                    <ul>
+                        <li>Curso de Desenvolvimento Web Avançado, Udemy, 2021</li>
+                        <li>Certificado em Desenvolvimento Ágil de Software, Coursera, 2022</li>
+                    </ul>
+                </section>
+                <section class="coluna">
+                    <h3 class="titulo-h3">Hard Skills</h3>
+                    <ul>
+                        <li>Linguagens de Programação: JavaScript, Python, Java</li>
+                        <li>Frameworks e Bibliotecas: React.js, Node.js, Django</li>
+                        <li>Banco de Dados: MySQL, MongoDB</li>
+                        <li>Ferramentas de Controle de Versão: Git, GitHub</li>
+                        <li>Metodologias Ágeis: Scrum, Kanban</li>
+                    </ul>
+                    
+                    <h3 class="titulo-h3">Soft Skills</h3>
+                    <ul>
+                        <li>Comunicação Efetiva</li>
+                        <li>Trabalho em Equipe</li>
+                        <li>Resolução de Problemas</li>
+                        <li>Capacidade de Aprendizado Rápido</li>
+                        <li>Adaptabilidade</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <hr>
+
+        <!--Seção Portfolio, apresentando trabalhos-->
+        <section id="portfolio">
+            <h2 class="titulo-h2">Portfólio</h2>
+            <figure class="item-portfolio">
+                <img src="assets/images/app-gerenciamento.png" alt="Sistema de Gerenciamento de Tarefas">
+                <figcaption>
+                    <h2 class="titulo-portfolio">Sistema de Gerenciamento de Tarefas</h2>
+                    <p class="descricao-portfolio">Desenvolvimento de um aplicativo web para gerenciar tarefas pessoais e profissionais, incluindo funcionalidades de criação, edição e exclusão de tarefas, notificações e categorização.</p>
+                </figcaption>
+            </figure>
+            <figure class="item-portfolio">
+                <img src="assets/images/app-loja.png" alt="Website de E-Commerce">
+                <figcaption>
+                    <h2 class="titulo-portfolio">Website de E-Commerce</h2>
+                    <p class="descricao-portfolio">Criação de um site de comércio eletrônico para uma boutique de moda local, incluindo um catálogo de produtos, sistema de carrinho de compras, checkout seguro e integração de pagamentos.</p>
+                </figcaption>
+            </figure>
+            <figure class="item-portfolio">
+                <img src="assets/images/app-rastreamento.png" alt="Aplicativo de Rastreamento de Entregas">
+                <figcaption>
+                    <h2 class="titulo-portfolio">Aplicativo de Rastreamento de Entregas</h2>
+                    <p class="descricao-portfolio">Desenvolvimento de um aplicativo móvel para rastrear o status de entregas de encomendas, permitindo que os usuários visualizem o progresso de suas entregas em tempo real e recebam notificações de atualização.</p>
+                </figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <!--Seção Depoimentos, para ex-clientes-->
+        <section id="depoimentos">
+            <h3 class="titulo-h3">Depoimentos</h3>
+            <p>"Mauris hendrerit nunc purus, in laoreet est 
+            congue sit amet. Integer euismod,
+            diam vel fringilla lobortis, magna purus malesuada nisi, 
+            a cursus est mauris id purus."</p>
+            <h4 class="titulo-h4">- Carlos Bahia</h4>
+            <p>"Mauris hendrerit nunc purus, in laoreet est 
+            congue sit amet. Integer euismod,
+            diam vel fringilla lobortis, magna purus malesuada nisi, 
+            a cursus est mauris id purus."</p>
+            <h4 class="titulo-h4">- Nazaré Esteves Tedesco</h4>
+        </section>
+
+        <!--Seção Contato, com formulário-->
+        <section id="contato">
+            <h1 class="titulo-h1">Contato</h1>
+            <form class="contato-form">
+                <label for="contato-nome">Nome e Sobrenome</label>
+                <input type="text" id="contato-nome">
+                <label for="contato-email">E-mail</label>
+                <input type="text" id="contato-email"><br>
+                <label for="contato-numero">Telefone</label>
+                <input type="tel" id="contato-telefone">
+                <label for="contato-mensagem">Mensagem</label>
+                <textarea id="contato-mensagem" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
     
-
-    <!--Seção Portfolio, apresentando trabalhos-->
-    <section class="portfolio">
-        <h2 class="titulo-h2">Portfólio</h2>
-        <figure class="item-portfolio">
-            <img src="assets/images/app-gerenciamento.png" alt="Sistema de Gerenciamento de Tarefas">
-            <figcaption>
-                <h2 class="titulo-portfolio">Sistema de Gerenciamento de Tarefas</h2>
-                <p class="descricao-portfolio">Desenvolvimento de um aplicativo web para gerenciar tarefas pessoais e profissionais, incluindo funcionalidades de criação, edição e exclusão de tarefas, notificações e categorização.</p>
-            </figcaption>
-        </figure>
-        
-        <figure class="item-portfolio">
-            <img src="assets/images/app-loja.png" alt="Website de E-Commerce">
-            <figcaption>
-                <h2 class="titulo-portfolio">Website de E-Commerce</h2>
-                <p class="descricao-portfolio">Criação de um site de comércio eletrônico para uma boutique de moda local, incluindo um catálogo de produtos, sistema de carrinho de compras, checkout seguro e integração de pagamentos.</p>
-            </figcaption>
-        </figure>
-        
-        <figure class="item-portfolio">
-            <img src="assets/images/app-rastreamento.png" alt="Aplicativo de Rastreamento de Entregas">
-            <figcaption>
-                <h2 class="titulo-portfolio">Aplicativo de Rastreamento de Entregas</h2>
-                <p class="descricao-portfolio">Desenvolvimento de um aplicativo móvel para rastrear o status de entregas de encomendas, permitindo que os usuários visualizem o progresso de suas entregas em tempo real e recebam notificações de atualização.</p>
-            </figcaption>
-        </figure>
-    </section>
-
-    <!--Seção Depoimentos, para ex-clientes-->
-    <section class="depoimentos">
-        <h3 class="titulo-h3">Depoimentos</h3>
-        <h4 class="titulo-h4">Nome Pessoa</h4>
-        <p> Mauris hendrerit nunc purus, in laoreet est 
-        congue sit amet. Integer euismod,
-        diam vel fringilla lobortis, magna purus malesuada nisi, 
-        a cursus est mauris id purus.</p>
-        <h4 class="titulo-h4">Nome Pessoa 2</h4>
-        <p> Mauris hendrerit nunc purus, in laoreet est 
-        congue sit amet. Integer euismod,
-        diam vel fringilla lobortis, magna purus malesuada nisi, 
-        a cursus est mauris id purus.</p>
-    </section>
-
-    <!--Seção Contato, com formulário-->
-    <section class="contato">
-        <h1 class="titulo-h1">Contato</h1>
-        <form class="contato-form">
-            <label for="contato-nome">Nome e Sobrenome</label>
-            <input type="text" id="contato-nome">
-            <label for="contato-email">E-mail</label>
-            <input type="text" id="contato-email"><br>
-            <label for="contato-numero">Telefone</label>
-            <input type="tel" id="contato-telefone">
-            <label for="contato-mensagem">Mensagem</label>
-            <textarea id="contato-mensagem" rows="5"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    
-    <footer class="rodape">
+    <footer id="rodape">
         <nav id="rodape-nav">
             <b id="direitos-autorais">© 2024 Todos os direitos reservados</b>
         </nav>

@@ -4,13 +4,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Fonte Poppins*/
 @font-face {
     font-family: 'Poppins';
-    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype'),
-         url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Fonte Silkscreen*/
+@font-face {
+    font-family: 'Silkscreen';
+    src: url(assets/fonts/Silkscreen-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url(assets/fonts/Silkscreen-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     background-image: url('assets/images/background-glitch.gif');
     background-repeat: no-repeat;
@@ -18,19 +40,30 @@ body {
     background-size: cover;
     font-family: 'Poppins';
 }
-.inicio, .perfil, .portfolio, .depoimentos {
+hr {
+    margin: auto;
+    width: 90%;
+    color: blue;
+}
+
+#inicio, #perfil, #portfolio, #depoimentos, #contato {
     background-color: rgba(247, 248, 236, 0.678);
 }
-.inicio, .perfil, .portfolio, .depoimentos, .contato {
+#inicio, #perfil, #portfolio, #depoimentos, #contato {
     padding: 3%;
     width: 90%;
     margin: auto;
 }
 
 /*Edição de títulos e textp de forma geral*/
+.titulo-h1 {
+    color: rgb(16, 16, 80);
+}
 .titulo-h2 {
     color:rgb(16, 39, 63);
     padding-bottom: 4%;
+    font-family: 'silkscreen';
+    font-weight: bold;
 }
 .titulo-h3 {
     color:rgba(22, 43, 66, 0.712);
@@ -39,17 +72,21 @@ body {
 }
 .titulo-h4 {
     color:rgb(43, 94, 13);
+    font-size: 14px;
+}
+.titulo-h1, .titulo-h2, .titulo-h3, .titulo-h4 {
+    font-family: 'Silkscreen';
 }
 
-/*Header levando aos itens da pagina*/
-.cabecalho{
+/*Header levando aos itens da página*/
+#cabecalho{
     background-color: rgb(36, 57, 110);
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
     padding: 1%;
 }
-#cabeçalho-nav {
+#cabecalho-nav {
     flex-direction: row;
 }
 #cabecalho-nav > a {
@@ -60,8 +97,8 @@ body {
     margin: 0 15px;
 }
 
-/*Estilização do ínicio, contendo foto e apresentação da developer*/
-.inicio {
+/*Seção Início*/
+#inicio {
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
     padding-bottom: 10%;
@@ -107,8 +144,8 @@ body {
     margin-left: 1%;
 }
 
-/*Seção perfil ou currículo*/
-.perfil {
+/*Seção Perfil, ou currículo*/
+#perfil {
     padding-left: 2%;
     text-align: center;
 }
@@ -117,12 +154,13 @@ body {
     margin: auto;
     margin-bottom: 5%;
     width: 70%;
+    gap: 20%;
 }
 .coluna {
     width: 60%;
 }
 ul {
-    margin-bottom: 20px;
+    margin-bottom: 20%;
 }
 li {
     list-style: none;
@@ -130,21 +168,21 @@ li {
     color: rgba(0, 0, 0, 0.842);
 }
 
-/*Portfolio e Perfil*/
+/*Portfólio e Perfil*/
 .perfil-container, .item-portfolio, .contato {
     background-color: rgba(255, 255, 255, 0.415);
     padding: 3%;
     border-radius: 5%;
 }
 
-/*Seção portfólio, com imagens e links de trabalhos*/
-.portfolio {
+/*Seção portfólio*/
+#portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /
+    gap: 10px;
 }
-.portfolio h2 {
+#portfolio h2 {
     width: 100%;
     text-align: center;
 }
@@ -159,6 +197,8 @@ li {
     margin-bottom: 10px;
 }
 .titulo-portfolio {
+    font-family: 'Poppins';
+    font-weight: bold;
     font-size: 17px;
     margin-bottom: 5px;
 }
@@ -166,15 +206,35 @@ li {
     font-size: 14px;
 }
 
-
-/*Depoimentos de ex-clientes, por exemplo*/
-.depoimentos {
+/*Seção de Depoimentos*/
+#depoimentos {
+    background-color: rgba(247, 248, 236, 0.678);
+    padding: 3%;
+    width: 90%;
+    margin: auto;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
 }
+#depoimentos h3 {
+    color:rgb(16, 39, 63);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#depoimentos h4 {
+    color:rgb(43, 94, 13);
+    font-size: 13px;
+    padding-right: 4%;
+    display: flex;
+    justify-content: flex-end;
+}
+#depoimentos p {
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 16px;
+    margin-top: 4%;
+}
 
 /*Seção de Contato*/
-.contato {
+#contato {
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 3%;
@@ -186,40 +246,41 @@ li {
 .contato-form {
     display: flex;
     flex-direction: column;
-    align-items: end
+    align-items: end;
 }
 .contato-form label {
+    font-family: 'Poppins';
+    font-weight: bold;
     margin-bottom: 5px;
 }
 .contato-form input {
-    width: 80%;
+    width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: none;
     border-radius: 3px;
 }
+.contato-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none
+}
 .contato-form button {
-    background-color: #629e4f;
+    background-color: rgb(30, 160, 116);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-family: 'Silkscreen';
 }
 .contato-form button:hover {
-    background-color: #45a049;
-}
-.contato-form textarea {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 3px;
-    resize: vertical;
+    background-color: rgb(21, 104, 76);
 }
 
 /*Rodapé do site*/
-.rodape {
+#rodape {
     background-color: rgba(36, 57, 110, 0.747);
     color: white;
     padding: 20px 0;
